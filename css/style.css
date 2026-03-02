@@ -85,7 +85,7 @@ label {
     background-size: cover;
 }
 
-.hero-h1,
+h1,
 .hero-button {
     animation: slide-up 1s ease forwards;
     opacity: 0;
@@ -167,4 +167,59 @@ label {
 footer {
     background-color: #000;
     color: #fff;
+}
+
+/***********************************************page carte******************************************/
+.card-1 {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: #141414;
+    animation: slide-right 1s ease forwards;
+    opacity: 0;
+    animation-delay: 0.4s;
+}
+.card-2 {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: #141414;
+    animation: slide-left 1s ease forwards;
+    opacity: 0;
+    animation-delay: 0.9s;
+}
+.card:hover{
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+    background-color: #0f0f0f;
+    transition: all 0.5s ease;
+}
+
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-left {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.table-dark tr th {
+    background-color: #141414 !important;
+    font-family: 'montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.table-dark tr td {
+    background-color: #141414 !important;
 }
